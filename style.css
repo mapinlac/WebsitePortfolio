@@ -262,7 +262,7 @@ html {
     height: auto; /* Adjust height to fit content */
     align-items: center;
     gap: 30px;
-    padding: 50px;
+    padding: 200px;
     position: relative;
     background-color: #ffffff;
     margin: 0 auto;
@@ -573,6 +573,7 @@ html {
 #wizard-projects-section,
 #school-projects-section {
     justify-content: flex-start; /* Align content at the top */
+    margin-top: 100px
 }
 
 #school-projects-section {
@@ -584,19 +585,148 @@ html {
     justify-content: center; /* Center content */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .navigation {
+        padding: 10px 20px;
+    }
+
+    .home .header {
+        width: 90%;
+        height: auto;
+        text-align: center; /* Center content */
+    }
+
+    .home .headline-subhead {
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%); /* Center content */
+    }
+
     .about-me {
-        flex-direction: column; /* Change to column for smaller screens */
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        padding: 100px 20px;
+        align-items: center; /* Center content */
     }
 
     .about-me .skills, .about-me .matz {
-        width: 100%; /* Ensure full width on smaller screens */
-        margin-left: 0; /* Remove margin on smaller screens */
+        width: 100%;
+        margin-left: 0;
+        text-align: center; /* Center content */
     }
 
     .about-me .matz {
-        margin-top: 20px; /* Add margin-top for spacing */
+        margin-top: 20px;
+    }
+
+    .projects {
+        width: 90%;
+        padding: 50px 20px;
+        align-items: center; /* Center content */
+    }
+
+    .items .item {
+        width: 90%;
+        height: auto;
+        text-align: center; /* Center content */
+    }
+
+    .footer {
+        padding: 20px 20px 50px;
+        align-items: center; /* Center content */
+    }
+
+    .footer .text-input-desktop, .footer .write-something-wrapper {
+        width: 100%;
+        text-align: center; /* Center content */
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 10px;
+    }
+
+    .home .header {
+        width: 100%;
+        height: auto;
+        text-align: center; /* Center content */
+    }
+
+    .home .headline-subhead {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%); /* Center content */
+    }
+
+    .about-me {
+        padding: 80px 10px;
+        align-items: center; /* Center content */
+    }
+
+    .projects {
+        width: 100%;
+        padding: 40px 10px;
+        align-items: center; /* Center content */
+    }
+
+    .items .item {
+        width: 100%;
+        height: auto;
+        text-align: center; /* Center content */
+    }
+
+    .footer {
+        padding: 10px 10px 30px;
+        align-items: center; /* Center content */
+    }
+
+    .footer .text-input-desktop, .footer .write-something-wrapper {
+        width: 100%;
+        text-align: center; /* Center content */
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        padding: 5px;
+    }
+
+    .home .header {
+        width: 100%;
+        height: auto;
+        text-align: center; /* Center content */
+    }
+
+    .home .headline-subhead {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%); /* Center content */
+    }
+
+    .about-me {
+        padding: 60px 5px;
+        align-items: center; /* Center content */
+    }
+
+    .projects {
+        width: 100%;
+        padding: 30px 5px;
+        align-items: center; /* Center content */
+    }
+
+    .items .item {
+        width: 100%;
+        height: auto;
+        text-align: center; /* Center content */
+    }
+
+    .footer {
+        padding: 5px 5px 20px;
+        align-items: center; /* Center content */
+    }
+
+    .footer .text-input-desktop, .footer .write-something-wrapper {
+        width: 100%;
+        text-align: center; /* Center content */
     }
 }
